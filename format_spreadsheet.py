@@ -1,8 +1,6 @@
 import openpyxl
 
 
-# TODO: графический интерфейс
-# TODO: проблема: видит файл только если файл в папке проекта
 def format_spreadsheet(file_path, new_file_name):
     a = r'\t'
     wb = openpyxl.load_workbook(file_path)
@@ -24,6 +22,3 @@ def format_spreadsheet(file_path, new_file_name):
             line_to_write = tuple(model_line) + tuple(current_line[3:])
             ws1.append(line_to_write)
     wb1.save(new_file_name)
-
-
-format_spreadsheet(file_path=r'C:\Users\Маша\Desktop\январь_22.xlsx', new_file_name='tests/test7.xlsx')
