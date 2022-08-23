@@ -2,7 +2,6 @@ import openpyxl
 
 
 def format_spreadsheet(file_path, new_file_name):
-    a = r'\t'
     wb = openpyxl.load_workbook(file_path)
 
     ws = wb.active
