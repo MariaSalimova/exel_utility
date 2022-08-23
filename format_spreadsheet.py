@@ -1,5 +1,4 @@
 import openpyxl
-from pathlib import Path
 
 
 # TODO: графический интерфейс
@@ -27,4 +26,4 @@ def format_spreadsheet(file_path, new_file_name):
     wb1.save(new_file_name)
 
 
-format_spreadsheet(file_path=r'C:\Users\Маша\Desktop\январь_22.xlsx', new_file_name='test6.xlsx')
+format_spreadsheet(file_path=r'C:\Users\Маша\Desktop\январь_22.xlsx', new_file_name='tests/test7.xlsx')
